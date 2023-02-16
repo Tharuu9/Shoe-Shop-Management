@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="1000.0" prefWidth="1920.0" style="-fx-background-color: #B0C4DE;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.NiharaShoe.controller.DashBoardController">
+   <children>
+      <AnchorPane prefHeight="1001.0" prefWidth="277.0" style="-fx-background-color: #00cec9;">
+         <children>
+            <ImageView fitHeight="39.0" fitWidth="38.0" layoutX="15.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/img3.png" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" layoutX="62.0" layoutY="14.0" prefHeight="27.0" prefWidth="205.0" style="-fx-background-radius: 15; -fx-background-color: #B8860B;" text="DASHBOARD" textAlignment="JUSTIFY" textFill="#111411">
+               <font>
+                  <Font name="Book Antiqua Bold" size="24.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="btnHome" alignment="CENTER" layoutX="75.0" layoutY="268.0" onAction="#HomeOnAction" prefHeight="39.0" prefWidth="188.0" style="-fx-background-color: #2d3436; -fx-background-radius: 16;" text="HOME" textFill="#ebe9e9">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <tooltip>
+                  <Tooltip text="Home" />
+               </tooltip>
+            </JFXButton>
+            <JFXButton fx:id="btnCustomer" alignment="CENTER" layoutX="75.0" layoutY="355.0" onAction="#CustomerOnAction" prefHeight="39.0" prefWidth="188.0" style="-fx-background-color: #2d3436; -fx-background-radius: 16;" text=" CUSTOMER" textFill="#eeeaed">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <tooltip>
+                  <Tooltip text="CUSTOMER" />
+               </tooltip>
+            </JFXButton>
+            <JFXButton fx:id="btnSupplier" buttonType="RAISED" layoutX="75.0" layoutY="540.0" onAction="#SupplierOnAction" prefHeight="39.0" prefWidth="188.0" style="-fx-background-color: #2d3436; -fx-background-radius: 16;" text="SUPPLIER" textFill="#fff8f8">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <tooltip>
+                  <Tooltip text="SUPPLIER" />
+               </tooltip>
+            </JFXButton>
+            <JFXButton fx:id="btnItem" layoutX="75.0" layoutY="630.0" onAction="#ItemOnAction" prefHeight="39.0" prefWidth="188.0" style="-fx-background-color: #2d3436; -fx-background-radius: 16;" text=" ITEM" textFill="#fffbfb">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <tooltip>
+                  <Tooltip text="ITEM" />
+               </tooltip>
+            </JFXButton>
+            <ImageView fitHeight="38.0" fitWidth="38.0" layoutX="14.0" layoutY="268.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/img5.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="38.0" fitWidth="38.0" layoutX="15.0" layoutY="356.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/img6.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="38.0" fitWidth="38.0" layoutX="14.0" layoutY="634.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/img8.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="32.0" fitWidth="38.0" layoutX="17.0" layoutY="544.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/img9.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="38.0" fitWidth="38.0" layoutX="14.0" layoutY="446.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/img11.png" />
+               </image>
+            </ImageView>
+            <JFXButton fx:id="btnEmployee" layoutX="75.0" layoutY="445.0" onAction="#EmployeeOnAction" prefHeight="39.0" prefWidth="188.0" style="-fx-background-color: #2d3436; -fx-background-radius: 16;" text="EMPLOYEE" textFill="#f2f2f2">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <tooltip>
+                  <Tooltip text="EMPLOYEE" />
+               </tooltip>
+            </JFXButton>
+            <JFXButton fx:id="btnLogout" layoutX="75.0" layoutY="945.0" onAction="#LogoutOnAction" prefHeight="39.0" prefWidth="188.0" style="-fx-background-color: #636e72; -fx-background-radius: 16;" text="LOGOUT" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <tooltip>
+                  <Tooltip text="LOGOUT" />
+               </tooltip>
+            </JFXButton>
+            <ImageView fitHeight="32.0" fitWidth="38.0" layoutX="15.0" layoutY="948.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/img12.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="193.0" fitWidth="108.0" layoutX="85.0" layoutY="64.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/img4.png" />
+               </image>
+            </ImageView>
+            <JFXTextField alignment="CENTER" layoutX="38.0" layoutY="190.0" prefHeight="34.0" prefWidth="202.0" style="-fx-background-color: #a29bfe; -fx-background-radius: 10;" text="Tharuu Wijsekara">
+               <font>
+                  <Font size="18.0" />
+               </font></JFXTextField>
+            <ImageView fitHeight="34.0" fitWidth="45.0" layoutX="15.0" layoutY="812.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/Place.png" />
+               </image>
+            </ImageView>
+            <JFXButton fx:id="btnAllOrder" layoutX="75.0" layoutY="809.0" onAction="#AllOrderOnAction" prefHeight="39.0" prefWidth="188.0" style="-fx-background-color: #2d3436; -fx-background-radius: 16;" text="PLACE ORDER " textFill="#fffbfb">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <tooltip>
+                  <Tooltip text="All ORDER" />
+               </tooltip>
+            </JFXButton>
+            <ImageView fitHeight="38.0" fitWidth="38.0" layoutX="14.0" layoutY="723.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/order%20icon.png" />
+               </image>
+            </ImageView>
+            <JFXButton fx:id="btnOrder" layoutX="75.0" layoutY="720.0" onAction="#OrderOnAction" prefHeight="39.0" prefWidth="188.0" style="-fx-background-color: #2d3436; -fx-background-radius: 16;" text="ORDER" textFill="#fffbfb">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <tooltip>
+                  <Tooltip text="ORDER" />
+               </tooltip>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="278.0" layoutY="3.0" prefHeight="39.0" prefWidth="1641.0" style="-fx-background-color: #FFFAF0;">
+         <children>
+            <ImageView fitHeight="39.0" fitWidth="49.0" layoutX="38.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/img13.png" />
+               </image>
+            </ImageView>
+            <JFXTextField fx:id="txtSearchBar" layoutX="76.0" layoutY="11.0" onAction="#SearchBarOnAction" prefHeight="33.0" prefWidth="862.0" promptText="Search" style="-fx-background-radius: 15; -fx-border-color: #DCDCDC;" />
+            <ImageView fitHeight="39.0" fitWidth="32.0" layoutX="1393.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/img18.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="52.0" fitWidth="32.0" layoutX="1454.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/img19.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="46.0" fitWidth="32.0" layoutX="1522.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/img20.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="lblTime" alignment="CENTER" layoutX="987.0" layoutY="11.0" prefHeight="34.0" prefWidth="157.0" style="-fx-background-color: #fd79a8; -fx-background-radius: 10;" text="11:53:45 AM">
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblDate" alignment="CENTER" layoutX="1192.0" layoutY="11.0" prefHeight="34.0" prefWidth="157.0" style="-fx-background-color: #a29bfe; -fx-background-radius: 10;" text="2022-02-30">
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="closeImg" fitHeight="46.0" fitWidth="32.0" layoutX="1578.0" layoutY="12.0" onMouseClicked="#CloseOnAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/img12.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="contest" layoutX="278.0" layoutY="60.0" prefHeight="941.0" prefWidth="1641.0" style="-fx-background-color: #dfe6e9;">
+         <children>
+            <ImageView fitHeight="317.0" fitWidth="401.0" layoutX="3.0" layoutY="-5.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../assets/Customer.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="lblCustomerCount" alignment="CENTER" layoutX="3.0" layoutY="351.0" prefHeight="59.0" prefWidth="401.0" style="-fx-background-color: #e17055; -fx-background-radius: 20;" text="08">
+               <font>
+                  <Font name="System Bold" size="41.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="317.0" fitWidth="401.0" layoutX="411.0" layoutY="-5.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../assets/item.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="lblItemCount" alignment="CENTER" layoutX="411.0" layoutY="351.0" prefHeight="59.0" prefWidth="401.0" style="-fx-background-color: #74b9ff; -fx-background-radius: 20;" text="09">
+               <font>
+                  <Font name="System Bold" size="41.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="2.0" layoutY="313.0" prefHeight="21.0" prefWidth="401.0" text="Customer Count" textFill="#2a10d7">
+               <font>
+                  <Font name="System Bold" size="26.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="420.0" layoutY="313.0" prefHeight="21.0" prefWidth="401.0" text="Item Count" textFill="#4d00ff">
+               <font>
+                  <Font name="System Bold" size="26.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="317.0" fitWidth="401.0" layoutX="821.0" layoutY="-5.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../assets/img11.png" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" layoutX="836.0" layoutY="313.0" prefHeight="21.0" prefWidth="401.0" text="Supplier Count" textFill="#4d00ff">
+               <font>
+                  <Font name="System Bold" size="26.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblSupplierCount" alignment="CENTER" layoutX="821.0" layoutY="351.0" prefHeight="59.0" prefWidth="401.0" style="-fx-background-color: #6c5ce7; -fx-background-radius: 20;" text="08">
+               <font>
+                  <Font name="System Bold" size="41.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="317.0" fitWidth="409.0" layoutX="1229.0" layoutY="-5.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../assets/new.png" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" layoutX="1233.0" layoutY="313.0" prefHeight="21.0" prefWidth="401.0" text="Employee Count" textFill="#4d00ff">
+               <font>
+                  <Font name="System Bold" size="26.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblEmployeeCount" alignment="CENTER" layoutX="1233.0" layoutY="351.0" prefHeight="59.0" prefWidth="401.0" style="-fx-background-color: #ffeaa7; -fx-background-radius: 20;" text="05">
+               <font>
+                  <Font name="System Bold" size="41.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.0.final using JasperReports Library version 6.20.0-2bc7ab61c56f459e8176eb05c7705e145cd400ad  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="PlaceOrderReport" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="06c63c6f-28f7-49dd-91e7-1fef8bf6fbf5">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<queryString language="SQL">
+		<![CDATA[]]>
+	</queryString>
+	<field name="name" class="java.lang.String"/>
+	<field name="unitPrice" class="java.lang.String"/>
+	<field name="qty" class="java.lang.String"/>
+	<field name="subTotal" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="199" splitType="Stretch">
+			<staticText>
+				<reportElement x="27" y="0" width="163" height="34" isRemoveLineWhenBlank="true" forecolor="#A449AB" backcolor="#8995B3" uuid="3d1c243d-524d-4141-9176-e4229f6d4085"/>
+				<textElement textAlignment="Justified">
+					<font size="24" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nihara Shoe]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="27" y="50" width="100" height="30" uuid="543b0d81-6144-4450-b3c5-42abb8560356"/>
+				<textElement>
+					<font size="18" isBold="true"/>
+				</textElement>
+				<text><![CDATA[82/E,]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="27" y="90" width="153" height="30" uuid="536e319d-e299-42f7-aa78-0f8417a3e2e3"/>
+				<textElement>
+					<font size="18" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Grace Pereis Rd,]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="27" y="130" width="100" height="30" uuid="91221577-c44a-4db6-884d-2a189b11e923"/>
+				<textElement>
+					<font size="18" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Panadura.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="280" y="40" width="80" height="30" uuid="45f1ccfb-1f09-402d-9eb3-3e44936f0f0e"/>
+				<textElement>
+					<font size="18" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Time:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="280" y="0" width="80" height="30" uuid="006df5ba-8391-4090-879a-0449d781af6e"/>
+				<textElement>
+					<font size="18" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Date:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="280" y="90" width="110" height="30" uuid="d59db39e-68a4-4987-9301-b9af15c73099"/>
+				<textElement>
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Invoice#]]></text>
+			</staticText>
+			<textField pattern="MMMMM dd, yyyy">
+				<reportElement x="420" y="0" width="100" height="30" uuid="0879e2f6-dac9-415e-8cc1-e2a9f17fd13d"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<textField pattern="HH:mm">
+				<reportElement x="420" y="40" width="100" height="30" uuid="e1d6c3a1-1c08-47ff-9677-2c45363ff2a9"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="90" splitType="Stretch">
+			<staticText>
+				<reportElement x="20" y="20" width="100" height="30" uuid="eb62b913-40aa-4645-93dd-ee5a4af50d2f"/>
+				<text><![CDATA[Item Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="200" y="20" width="100" height="30" uuid="7357b870-1a66-4c13-b9b8-eda8eaa987c9"/>
+				<text><![CDATA[unitPrice]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="340" y="17" width="100" height="30" uuid="5b52789f-e434-4657-978c-9ef6c998951a"/>
+				<text><![CDATA[qty]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="460" y="17" width="100" height="30" uuid="a5ecfed6-0450-4679-8c3b-66132c513f3c"/>
+				<text><![CDATA[subTotal]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch">
+			<textField>
+				<reportElement x="48" y="65" width="100" height="30" uuid="4e855575-6064-44b5-becc-90125d7ce403">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="49a2f879-0a61-48cb-94d2-afe914dc7b41"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="190" y="60" width="100" height="30" uuid="9e3ad09c-df40-4474-a5d2-06c7c5fc1ed2">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="0e2f716d-abc0-41e2-a4a1-243388cf4b6a"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{unitPrice}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="331" y="66" width="100" height="30" uuid="03a1a7ef-9a47-46bd-8278-55fba0cd8dd3">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="ac082b0a-e274-453f-a874-ef0f1d014e2e"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{qty}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="460" y="60" width="100" height="30" uuid="5e983bed-ed43-48e5-b6c5-befdf41c103d">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="b161b108-2ebe-4fd7-9ef8-31d171089d4c"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{subTotal}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="844.0" prefWidth="1202.0" style="-fx-background-color:  linear-gradient(to right top, #7b52ce, #6f58d0, #625dd1, #5561d2, #4765d2, #4161cc, #3b5cc5, #3458bf, #354ab1, #363ca4, #362e95, #361f87);;" stylesheets="@../assets/style/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.NiharaShoe.controller.LoginFormController">
+   <children>
+      <AnchorPane layoutX="202.0" layoutY="142.0" prefHeight="577.0" prefWidth="799.0" style="-fx-background-radius: 19; -fx-background-color: #bdc3c7;" stylesheets="@../assets/style/style.css">
+         <children>
+            <JFXTextField fx:id="txtUserName" layoutX="85.0" layoutY="188.0" prefHeight="39.0" prefWidth="607.0" promptText="User Name:" style="-fx-background-radius: 10; -fx-background-color: #b2bec3;" stylesheets="@../assets/style/style.css">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </JFXTextField>
+            <ImageView fitHeight="47.0" fitWidth="54.0" layoutX="22.0" layoutY="184.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../assets/User.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="47.0" fitWidth="54.0" layoutX="22.0" layoutY="261.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../assets/Password.png" />
+               </image>
+            </ImageView>
+            <JFXPasswordField fx:id="txtPassword" layoutX="85.0" layoutY="269.0" prefHeight="39.0" prefWidth="607.0" promptText="Password:" style="-fx-background-color: #b2bec3; -fx-background-radius: 10;">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </JFXPasswordField>
+            <JFXButton alignment="CENTER" buttonType="RAISED" layoutX="85.0" layoutY="445.0" onAction="#LoginOnAction" prefHeight="39.0" prefWidth="607.0" style="-fx-background-color: #34495e; -fx-background-radius: 11;" text="Login" textFill="#f8f8f8">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </JFXButton>
+            <CheckBox alignment="CENTER" layoutX="310.0" layoutY="378.0" mnemonicParsing="false" text="Remember me" textFill="#389024">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </CheckBox>
+            <Label alignment="CENTER" layoutX="256.0" layoutY="3.0" prefHeight="39.0" prefWidth="265.0" text="Welcome...!" textAlignment="JUSTIFY" textFill="#4f228d">
+               <font>
+                  <Font name="Gill Sans Ultra Bold" size="24.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="126.0" fitWidth="157.0" layoutX="321.0" layoutY="50.0" opacity="0.64" pickOnBounds="true">
+               <image>
+                  <Image url="@../assets/img4.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Label alignment="CENTER" layoutX="84.0" layoutY="3.0" opacity="0.64" prefHeight="51.0" prefWidth="1036.0" style="-fx-background-color: #55efc4; -fx-background-radius: 8;" text="____NIHARA SHOE PALACE____">
+         <font>
+            <Font name="Copperplate Gothic Bold" size="36.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
